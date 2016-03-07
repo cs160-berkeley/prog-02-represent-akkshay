@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.wearable.view.BoxInsetLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context="repr.khoslaa.com.representatives.MainActivity"
+    tools:deviceIds="wear">
+
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentBottom="true"
+        android:src="@drawable/govfinally"
+        android:scaleType= "centerCrop"
+        android:id="@+id/govImageView" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/profileImageView"
+        android:layout_width="120sp"
+        android:layout_height="120sp"
+        android:src="@drawable/pete"
+        app:civ_border_width="2dp"
+        app:civ_border_color="#3399ff"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30sp"
+        android:layout_marginLeft="50sp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pete Aguilar"
+        android:id="@+id/repNameWatch"
+        android:textSize="20sp"
+        android:textColor="#ffffff"
+        android:layout_below="@+id/profileImageView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="160dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Democrat"
+        android:id="@+id/partyWatch"
+        android:textSize="15sp"
+        android:textColor="#ffffff"
+        android:layout_below="@+id/repNameWatch"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="70dp"
+        android:layout_marginTop="185dp"/>
+
+    <Button
+        android:id="@+id/nextButton"
+        android:layout_width="40dp"
+        android:layout_height="30dp"
+        android:text="NEXT"
+        android:layout_marginStart="160dp"
+        android:textSize="10sp"
+        android:layout_marginTop="140dp"
+        android:layout_marginLeft="5dp"
+        android:backgroundTint="#ffffff"
+        android:textColor="#0099cc"
+        />
+
+    <Button
+        android:id="@+id/backButton"
+        android:layout_width="40dp"
+        android:layout_height="30dp"
+        android:text="PREV"
+        android:layout_marginStart="10dp"
+        android:textSize="10sp"
+        android:layout_marginTop="140dp"
+        android:layout_marginLeft="5dp"
+        android:backgroundTint="#ffffff"
+        android:textColor="#0099cc"
+        />
+
+
+</android.support.wearable.view.BoxInsetLayout>
+<!--<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+    <!--xmlns:tools="http://schemas.android.com/tools"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:paddingBottom="@dimen/activity_vertical_margin"-->
+    <!--android:paddingLeft="@dimen/activity_horizontal_margin"-->
+    <!--android:paddingRight="@dimen/activity_horizontal_margin"-->
+    <!--android:paddingTop="@dimen/activity_vertical_margin"-->
+    <!--tools:context="repr.khoslaa.com.representatives.RepViewActivity">-->
+
+ <!-- -->
+<!--</RelativeLayout>-->
