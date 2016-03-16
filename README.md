@@ -12,7 +12,7 @@ See [Represent! App Demo] (https://youtu.be/jlPtXkcSyEg)
 ## Screenshots
 
 <img src="screenshots/main.png" height="400" alt="Screenshot"/>
-<img src="screenshots/congressional" height="400" alt="Screenshot"/>
+<img src="screenshots/congressional.png" height="400" alt="Screenshot"/>
 <img src="screenshots/detail.png" height="400" alt="Screenshot"/>
 
 ## Acknowledgments
