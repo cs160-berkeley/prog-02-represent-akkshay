@@ -1,0 +1,321 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="repr.khoslaa.com.representatives.CongressionalActivity"
+    tools:showIn="@layout/activity_congressional">
+
+
+
+
+    <ImageView
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_alignParentTop="true"
+    android:layout_alignParentBottom="true"
+    android:src="@drawable/govfinally"
+    android:scaleType= "centerCrop"
+    android:id="@+id/govImageViewTwo" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="YOUR REPRESENTATIVES"
+        android:id="@+id/yourReps"
+        android:textSize="30sp"
+        android:textColor="#20D76D"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp" />
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/cardList"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/yourReps"
+        />
+
+    <!--<ImageView-->
+    <!--android:layout_width="fill_parent"-->
+    <!--android:layout_height="fill_parent"-->
+    <!--android:layout_alignParentTop="true"-->
+    <!--android:layout_alignParentBottom="true"-->
+    <!--android:src="@drawable/black"-->
+    <!--android:alpha="0.6"-->
+    <!--android:scaleType= "centerCrop"-->
+    <!--android:id="@+id/blackImageViewTwo" />-->
+
+
+
+
+    <!--<de.hdodenhof.circleimageview.CircleImageView-->
+    <!--xmlns:app="http://schemas.android.com/apk/res-auto"-->
+    <!--android:id="@+id/imageViewOne"-->
+    <!--android:layout_width="120sp"-->
+    <!--android:layout_height="120sp"-->
+    <!--android:src="@drawable/pete"-->
+    <!--app:civ_border_width="2dp"-->
+    <!--app:civ_border_color="#3399ff"-->
+    <!--android:layout_below="@+id/yourReps"-->
+    <!--android:layout_marginTop="20sp"/>-->
+
+    <!--<de.hdodenhof.circleimageview.CircleImageView-->
+    <!--xmlns:app="http://schemas.android.com/apk/res-auto"-->
+    <!--android:id="@+id/imageViewTwo"-->
+    <!--android:layout_width="120sp"-->
+    <!--android:layout_height="120sp"-->
+    <!--android:src="@drawable/diane"-->
+    <!--app:civ_border_width="2dp"-->
+    <!--app:civ_border_color="#ff0000"-->
+    <!--android:layout_below="@+id/imageViewOne"-->
+    <!--android:layout_marginTop="30sp"/>-->
+
+    <!--<de.hdodenhof.circleimageview.CircleImageView-->
+    <!--xmlns:app="http://schemas.android.com/apk/res-auto"-->
+    <!--android:id="@+id/imageViewThree"-->
+    <!--android:layout_width="120sp"-->
+    <!--android:layout_height="120sp"-->
+    <!--android:src="@drawable/boxer"-->
+    <!--app:civ_border_width="2dp"-->
+    <!--app:civ_border_color="#3399ff"-->
+    <!--android:layout_below="@+id/imageViewTwo"-->
+    <!--android:layout_marginTop="30sp"/>-->
+
+    <!--<TextView-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:textAppearance="?android:attr/textAppearanceLarge"-->
+        <!--android:text="Pete Aguilar (D)"-->
+        <!--android:id="@+id/repOneName"-->
+        <!--android:textSize="20sp"-->
+        <!--android:textColor="#ffffff"-->
+        <!--android:layout_toRightOf="@id/imageViewOne"-->
+        <!--android:layout_below="@+id/yourReps"-->
+        <!--android:layout_marginTop="20dp"-->
+        <!--android:layout_marginLeft="20dp"/>-->
+    <!--<Button-->
+        <!--android:id="@+id/moreButtonOne"-->
+        <!--android:layout_width="70dp"-->
+        <!--android:layout_height="40dp"-->
+        <!--android:text="MORE"-->
+        <!--android:layout_toRightOf="@id/repOneName"-->
+        <!--android:layout_below="@id/yourReps"-->
+        <!--android:layout_marginTop="10dp"-->
+        <!--android:layout_marginLeft="5dp"-->
+        <!--android:backgroundTint="#ffffff"-->
+        <!--android:textColor="#0099cc"-->
+    <!--/>-->
+
+    <!--<TextView-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:textAppearance="?android:attr/textAppearanceLarge"-->
+        <!--android:text="Email: pete.aguilar@ca.gov"-->
+        <!--android:id="@+id/repOneEmail"-->
+        <!--android:textSize="18sp"-->
+        <!--android:textColor="#ffffff"-->
+        <!--android:layout_below="@id/repOneName"-->
+        <!--android:layout_toRightOf="@id/imageViewOne"-->
+        <!--android:layout_marginTop="0dp"-->
+        <!--android:layout_marginLeft="20dp"/>-->
+    <!--<TextView-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:textAppearance="?android:attr/textAppearanceLarge"-->
+        <!--android:text="Website: peteaguilar.com"-->
+        <!--android:id="@+id/repOneWebsite"-->
+        <!--android:textSize="18sp"-->
+        <!--android:textColor="#ffffff"-->
+        <!--android:layout_below="@id/repOneEmail"-->
+        <!--android:layout_toRightOf="@id/imageViewOne"-->
+        <!--android:layout_marginTop="0dp"-->
+        <!--android:layout_marginLeft="20dp"/>-->
+
+
+    <!--<ImageView-->
+        <!--android:layout_width="25dp"-->
+        <!--android:layout_height="25dp"-->
+        <!--android:src="@drawable/twittericon"-->
+        <!--android:layout_toRightOf="@id/imageViewOne"-->
+        <!--android:scaleType="fitCenter"-->
+        <!--android:layout_below="@id/repOneWebsite"-->
+        <!--android:id="@+id/twitterIconOne"-->
+        <!--android:layout_marginTop="10dp"-->
+        <!--android:layout_marginLeft="20dp"/>-->
+
+    <!--<TextView-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:textAppearance="?android:attr/textAppearanceLarge"-->
+        <!--android:text="I'm a representative! Yay me. #ImAwesome "-->
+        <!--android:id="@+id/tweetOne"-->
+        <!--android:textSize="18sp"-->
+        <!--android:textColor="#3399ff"-->
+        <!--android:layout_below="@id/repOneWebsite"-->
+        <!--android:layout_toRightOf="@id/twitterIconOne"-->
+        <!--android:layout_marginTop="5dp"-->
+        <!--android:layout_marginLeft="10dp"/>-->
+
+    <!--<TextView-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:textAppearance="?android:attr/textAppearanceLarge"-->
+        <!--android:text="Diane Feinstein (R)"-->
+        <!--android:id="@+id/repTwoName"-->
+        <!--android:textSize="20sp"-->
+        <!--android:textColor="#ffffff"-->
+        <!--android:layout_toRightOf="@id/imageViewTwo"-->
+        <!--android:layout_below="@+id/tweetOne"-->
+        <!--android:layout_marginTop="30dp"-->
+        <!--android:layout_marginLeft="20dp"/>-->
+    <!--<Button-->
+        <!--android:id="@+id/moreButtonTwo"-->
+        <!--android:layout_width="70dp"-->
+        <!--android:layout_height="40dp"-->
+        <!--android:text="MORE"-->
+        <!--android:layout_toRightOf="@id/repTwoName"-->
+        <!--android:layout_below="@id/tweetOne"-->
+        <!--android:layout_marginTop="20dp"-->
+        <!--android:layout_marginLeft="5dp"-->
+        <!--android:backgroundTint="#ffffff"-->
+        <!--android:textColor="#0099cc"-->
+        <!--/>-->
+
+    <!--<TextView-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:textAppearance="?android:attr/textAppearanceLarge"-->
+        <!--android:text="Email: diane.fein@ca.gov"-->
+        <!--android:id="@+id/repTwoEmail"-->
+        <!--android:textSize="18sp"-->
+        <!--android:textColor="#ffffff"-->
+        <!--android:layout_below="@id/repTwoName"-->
+        <!--android:layout_toRightOf="@id/imageViewOne"-->
+        <!--android:layout_marginTop="0dp"-->
+        <!--android:layout_marginLeft="20dp"/>-->
+    <!--<TextView-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:textAppearance="?android:attr/textAppearanceLarge"-->
+        <!--android:text="Website: dianef.com"-->
+        <!--android:id="@+id/repTwoWebsite"-->
+        <!--android:textSize="18sp"-->
+        <!--android:textColor="#ffffff"-->
+        <!--android:layout_below="@id/repTwoEmail"-->
+        <!--android:layout_toRightOf="@id/imageViewOne"-->
+        <!--android:layout_marginTop="0dp"-->
+        <!--android:layout_marginLeft="20dp"/>-->
+
+
+    <!--<ImageView-->
+        <!--android:layout_width="25dp"-->
+        <!--android:layout_height="25dp"-->
+        <!--android:src="@drawable/twittericon"-->
+        <!--android:layout_toRightOf="@id/imageViewTwo"-->
+        <!--android:scaleType="fitCenter"-->
+        <!--android:layout_below="@id/repTwoWebsite"-->
+        <!--android:id="@+id/twitterIconTwo"-->
+        <!--android:layout_marginTop="10dp"-->
+        <!--android:layout_marginLeft="20dp"/>-->
+
+    <!--<TextView-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:textAppearance="?android:attr/textAppearanceLarge"-->
+        <!--android:text="I'm a senator! Yay me. #ImAwesome "-->
+        <!--android:id="@+id/tweetTwo"-->
+        <!--android:textSize="18sp"-->
+        <!--android:textColor="#3399ff"-->
+        <!--android:layout_below="@id/repTwoWebsite"-->
+        <!--android:layout_toRightOf="@id/twitterIconTwo"-->
+        <!--android:layout_marginTop="5dp"-->
+        <!--android:layout_marginLeft="10dp"/>-->
+
+    <!--<TextView-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:textAppearance="?android:attr/textAppearanceLarge"-->
+        <!--android:text="Barbara Boxer (D)"-->
+        <!--android:id="@+id/repThreeName"-->
+        <!--android:textSize="20sp"-->
+        <!--android:textColor="#ffffff"-->
+        <!--android:layout_toRightOf="@id/imageViewThree"-->
+        <!--android:layout_below="@+id/tweetTwo"-->
+        <!--android:layout_marginTop="30dp"-->
+        <!--android:layout_marginLeft="20dp"/>-->
+    <!--<Button-->
+        <!--android:id="@+id/moreButtonThree"-->
+        <!--android:layout_width="70dp"-->
+        <!--android:layout_height="40dp"-->
+        <!--android:text="MORE"-->
+        <!--android:layout_toRightOf="@id/repThreeName"-->
+        <!--android:layout_below="@id/tweetTwo"-->
+        <!--android:layout_marginTop="20dp"-->
+        <!--android:layout_marginLeft="5dp"-->
+        <!--android:backgroundTint="#ffffff"-->
+        <!--android:textColor="#0099cc"-->
+        <!--/>-->
+    <!--<TextView-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:textAppearance="?android:attr/textAppearanceLarge"-->
+        <!--android:text="Email: barbara.boxer@ca.gov"-->
+        <!--android:id="@+id/repThreeEmail"-->
+        <!--android:textSize="18sp"-->
+        <!--android:textColor="#ffffff"-->
+        <!--android:layout_below="@id/repThreeName"-->
+        <!--android:layout_toRightOf="@id/imageViewThree"-->
+        <!--android:layout_marginTop="0dp"-->
+        <!--android:layout_marginLeft="20dp"/>-->
+    <!--<TextView-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:textAppearance="?android:attr/textAppearanceLarge"-->
+        <!--android:text="Website: barbaraboxer.com"-->
+        <!--android:id="@+id/repThreeWebsite"-->
+        <!--android:textSize="18sp"-->
+        <!--android:textColor="#ffffff"-->
+        <!--android:layout_below="@id/repThreeEmail"-->
+        <!--android:layout_toRightOf="@id/imageViewThree"-->
+        <!--android:layout_marginTop="0dp"-->
+        <!--android:layout_marginLeft="20dp"/>-->
+
+
+    <!--<ImageView-->
+        <!--android:layout_width="25dp"-->
+        <!--android:layout_height="25dp"-->
+        <!--android:src="@drawable/twittericon"-->
+        <!--android:layout_toRightOf="@id/imageViewThree"-->
+        <!--android:scaleType="fitCenter"-->
+        <!--android:layout_below="@id/repThreeWebsite"-->
+        <!--android:id="@+id/twitterIconThree"-->
+        <!--android:layout_marginTop="10dp"-->
+        <!--android:layout_marginLeft="20dp"/>-->
+
+    <!--<TextView-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:textAppearance="?android:attr/textAppearanceLarge"-->
+        <!--android:text="I'm a senator! Yay me. #ImAwesome "-->
+        <!--android:id="@+id/tweetThree"-->
+        <!--android:textSize="18sp"-->
+        <!--android:textColor="#3399ff"-->
+        <!--android:layout_below="@id/repThreeWebsite"-->
+        <!--android:layout_toRightOf="@id/twitterIconThree"-->
+        <!--android:layout_marginTop="5dp"-->
+        <!--android:layout_marginLeft="10dp"/>-->
+
+
+</RelativeLayout>
+

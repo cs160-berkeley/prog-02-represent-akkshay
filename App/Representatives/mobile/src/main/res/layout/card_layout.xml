@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/card_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    card_view:cardCornerRadius="4dp"
+    android:layout_margin="5dp"
+    card_view:cardBackgroundColor="@android:color/transparent"
+    card_view:cardElevation="0dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/relativeLayout">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/repProfilePic"
+        android:layout_width="120sp"
+        android:layout_height="120sp"
+        android:src="@drawable/pete"
+        app:civ_border_width="2dp"
+        app:civ_border_color="#3399ff"
+        android:layout_marginTop="20sp"/>
+
+        <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Pete Aguilar (D)"
+        android:id="@+id/repName"
+        android:textSize="16sp"
+        android:textColor="#ffffff"
+        android:layout_toRightOf="@id/repProfilePic"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"/>
+        <Button
+        android:id="@+id/moreButton"
+        android:layout_width="50dp"
+        android:layout_height="40dp"
+        android:text="MORE"
+            android:textSize="9dp"
+        android:layout_toRightOf="@id/repName"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="5dp"
+        android:backgroundTint="#ffffff"
+        android:textColor="#0099cc"
+        />
+
+        <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Email: pete.aguilar@ca.gov"
+        android:id="@+id/repEmail"
+        android:textSize="14sp"
+        android:textColor="#ffffff"
+        android:layout_below="@id/repName"
+        android:layout_toRightOf="@id/repProfilePic"
+        android:layout_marginTop="0dp"
+        android:layout_marginLeft="20dp"/>
+        <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Website: peteaguilar.com"
+        android:id="@+id/repWebsite"
+        android:textSize="15sp"
+        android:textColor="#ffffff"
+        android:layout_below="@id/repEmail"
+        android:layout_toRightOf="@id/repProfilePic"
+        android:layout_marginTop="0dp"
+        android:layout_marginLeft="20dp"/>
+
+
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:src="@drawable/twittericon"
+            android:layout_toRightOf="@id/repProfilePic"
+            android:scaleType="fitCenter"
+            android:layout_below="@id/repWebsite"
+            android:id="@+id/twitterIcon"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="20dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text=" "
+            android:id="@+id/tweet"
+            android:textSize="12sp"
+            android:textColor="#3399ff"
+            android:layout_below="@id/repWebsite"
+            android:layout_toRightOf="@id/twitterIcon"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="10dp"/>
+
+        <!--<com.twitter.sdk.android.tweetui.TweetView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:id="@+id/tweetView"-->
+            <!--android:layout_height="wrap_content"-->
+
+            <!-->-->
+
+        <!--</com.twitter.sdk.android.tweetui.TweetView>-->
+
+
+
+    </RelativeLayout>
+
+
+
+</android.support.v7.widget.CardView>
