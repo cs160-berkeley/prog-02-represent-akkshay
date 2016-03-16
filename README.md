@@ -1,20 +1,21 @@
 # PROG 02: Represent!
 
-Briefly describe your app here.
+Represent! is an app for anyone to find out who their representatives and senators are based on a zipcode or their current location.
 
 ## Authors
-
-FirstName LastName ([your_email@berkeley.edu](mailto:your_email@berkeley.edu))
+Akkshay Khoslaa ([akhoslaa@berkeley.edu](mailto:akhoslaa@berkeley.edu))
 
 ## Demo Video
 
-See [your demo video title here] (https://link_to_your_video)
+See [Represent! App Demo] (https://youtu.be/jlPtXkcSyEg)
 
 ## Screenshots
 
 <img src="screenshots/main.png" height="400" alt="Screenshot"/>
+<img src="screenshots/congressional" height="400" alt="Screenshot"/>
+<img src="screenshots/detail.png" height="400" alt="Screenshot"/>
 
 ## Acknowledgments
 
-* Hat tip to anyone who's code was used
-* Any other support
+* CircleImageView Library (de.hdodenhof:circleimageview:2.0.0)
+* Picasso Library (com.squareup.picasso:picasso:2.5.2)
